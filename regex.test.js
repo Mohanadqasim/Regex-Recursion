@@ -6,11 +6,9 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s){
-    const regex = /[a-zA-Z]+[A]$/g
-    const regex1 = /\D/gi;
+    const regex = /^[a-zA-Z\s]*[A]$/;
     let result = regex.test(s);
-    let result1 = regex1.test(s);
-    return (result && result1);
+    return (result);
 }
 
 
